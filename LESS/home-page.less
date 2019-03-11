@@ -1,7 +1,7 @@
 .home {
   height: 100%;
   width: 100%;
-  background-image: url("../img/head.jpg");
+  background-image: url("../img/main.png");
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -9,55 +9,89 @@
 
   .top {
     //img
-    .head {
-      .width();
-      border-radius: 10px;
-      width: 90%;
+    .arrow {
+      height: 5%;
+      width: 5%;
       display: flex;
-      margin: auto;
-      margin-top: 20px;
-      @media @phone {
-        width: 80%;
-      }
+      margin: 0 auto;
+      //   padding-top: -30px;
+        padding-bottom: 20px;
     }
+
     .intro {
-      height: 460px;
+      height: 440px;
       border-radius: 10px;
       padding: 30px 10px;
       margin-top: 20px;
-      .width();
+      .width(600px);
 
       h1 {
         padding: 0;
         text-align: center;
+        text-shadow: 2px 2px 4px black;
       }
       p {
         text-align: center;
+        text-shadow: 2px 2px 4px black;
       }
-      .loginbtn {
+      a {
+        font-weight: bold;
+        font-size: 4rem;
         .center();
-        .btn(black, white);
-        text-align: center;
+        color: white;
+        padding-top: 60px;
+        text-shadow: 2px 2px 4px black;
       }
     }
   }
   .main {
+    // main body images
+
+    .bag {
+      width: 40%;
+      height: 40%;
+      margin: auto;
+    }
+    .kids {
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+    }
+    .book {
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+    }
+    .signup {
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+    }
+
     .light {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       background: rgb(207, 207, 207);
       border-radius: 10px;
       padding: 30px 10px;
       margin-top: 20px;
-      p{
-        .width();
+      p {
+        .width(600px);
+        text-align: center;
       }
     }
     .dark {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       background: rgb(170, 170, 170);
       border-radius: 10px;
       padding: 30px 10px;
       margin-top: 20px;
-      p{
-        .width();
+      p {
+        .width(600px);
+        text-align: center;
       }
     }
   }
