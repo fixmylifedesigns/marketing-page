@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./CSS/index.css" />
   </head>
+
   <body class="container home">
+    <!-- <body class="container home" 
+  style = 'background: url(img/head.jpg); background-size: 100%; background-repeat: no-repeat; background-position: top center;'
+  > -->
+
     <div class="navigation">
-      <h2>Educell</h2>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="team.html">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Sign In</a>
-      </nav>
+      <div class="nav">
+        <h2>Educell</h2>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="team.html">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Sign In</a>
+        </nav>
+      </div>
     </div>
-    <div class="intro">
-      <img src="img/head.jpg" class="head" alt="computer" />
+    <div class="top">
 
-      <h1>Our Team</h1>
-
-      <p>
-        SOLVING EDUCATIONAL CHALLENGES IN REMOTE AND LOW-RESOURCE ENVIRONMENTS
-      </p>
+      <div class="intro">
+        <h1>EDUCELL</h1>
+        <p>
+          SOLVING EDUCATIONAL CHALLENGES
+          <br />IN REMOTE AND LOW-RESOURCE <br />ENVIRONMENTS
+        </p>
+        <button class="loginbtn">Login</button>
+        <a href="#one">Learn More</a>
+      </div>
     </div>
     <div class="main">
-      <section class="1">
+      <section id="one" class="light">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </section>
-      <section class="2">
+      <section class="dark">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -39,7 +49,7 @@
       </section>
     </div>
     <footer>
-            <p>© Educell 2019</p>
-          </footer>
+      <p>© Educell 2019</p>
+    </footer>
   </body>
 </html>
