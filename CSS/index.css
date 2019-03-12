@@ -272,8 +272,7 @@ p {
   }
 }
 .header nav {
-  font-size: 1.9rem;
-  padding-right: 10px;
+  display: none;
 }
 @media (max-width: 1070px) {
   .header nav {
@@ -288,6 +287,8 @@ p {
   }
 }
 .header nav a {
+  font-size: 1.9rem;
+  padding-right: 10px;
   color: black;
 }
 .header .menuIcon {
@@ -301,7 +302,7 @@ p {
   }
 }
 .menuopen {
-  display: none;
+  display: block;
 }
 footer {
   display: flex;
