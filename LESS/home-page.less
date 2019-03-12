@@ -46,16 +46,17 @@
   .main {
     // main body images
 
-    iframe {
+    .tablet {
       width: 50%;
-      margin: auto;
+      height: 50%;
+      margin: 0 auto;
     }
     .kids {
       width: 50%;
       height: 50%;
       margin: 0 auto;
     }
-    .book {
+    .desk {
       width: 50%;
       height: 50%;
       margin: 0 auto;
@@ -65,20 +66,31 @@
       height: 50%;
       margin: 0 auto;
     }
+    ul {
+      padding-top: 10px;
+      .width(600px);
+      color: black;
 
+    }
     .light {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-direction: row;
-      background: white;
-      border-radius: 10px;
+      background: rgba(155, 183, 212, 1);
+      // border-radius: 10px;
       padding: 30px 40px;
-      margin-top: 20px;
+      // margin-top: 20px;
       @media @mobile {
         flex-direction: column-reverse;
       }
       h2 {
         color: black;
+        text-align: center;
+        font-size: 6rem;
+        @media @mobile {
+          font-size:3.2rem;
+        }
       }
       p {
         padding-top: 10px;
@@ -91,10 +103,18 @@
       display: flex;
       justify-content: space-between;
       flex-direction: row-reverse;
-      background: rgb(199, 199, 199);
-      border-radius: 10px;
+      background: rgba(17, 52, 90, 1);
+      // border-radius: 10px;
       padding: 30px 10px;
-      margin-top: 20px;
+      // margin-top: 20px;
+      h2 {
+        color: black;
+        text-align: center;
+        font-size: 6rem;
+        @media @mobile {
+          font-size:3.2rem;
+        }
+      }
       p {
         padding-top: 10px;
         .width(600px);
