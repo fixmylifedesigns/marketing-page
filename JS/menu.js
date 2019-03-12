@@ -14,8 +14,9 @@
 
 // let menu = document.querySelectorAll(".navigation").forEach(menu => new Menu(menu));
 // console.log(menu)
+
 const toggleMenu = () => {
-    menu.classList.toggle('menuopen');
+    menu.classList.toggle('menu');
     console.log("click")
 };
 
