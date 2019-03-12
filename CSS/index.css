@@ -201,18 +201,17 @@ html {
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: top center;
-  background-position-y: 80%;
+  background-position-y: 100px;
 }
 @media (max-width: 1070px) {
   .container {
-    background-position-y: 50%;
+    background-position-y: 300px;
     background-size: 100%;
   }
 }
 @media (max-width: 600px) {
   .container {
-    background-position-y: 50%;
+    background-position-y: 300px;
     background-size: 100%;
   }
 }
@@ -374,20 +373,44 @@ footer {
   height: 50%;
   margin: 0 auto;
 }
+@media (max-width: 1070px) {
+  .home .main .tablet {
+    width: 100%;
+    height: 100%;
+  }
+}
 .home .main .kids {
   width: 50%;
   height: 50%;
   margin: 0 auto;
+}
+@media (max-width: 1070px) {
+  .home .main .kids {
+    width: 100%;
+    height: 100%;
+  }
 }
 .home .main .desk {
   width: 50%;
   height: 50%;
   margin: 0 auto;
 }
+@media (max-width: 1070px) {
+  .home .main .desk {
+    width: 100%;
+    height: 100%;
+  }
+}
 .home .main .signup {
   width: 50%;
   height: 50%;
   margin: 0 auto;
+}
+@media (max-width: 1070px) {
+  .home .main .signup {
+    width: 100%;
+    height: 100%;
+  }
 }
 .home .main ul {
   padding-top: 10px;
@@ -433,6 +456,11 @@ footer {
   flex-direction: row-reverse;
   background: #11345a;
   padding: 30px 10px;
+}
+@media (max-width: 1070px) {
+  .home .main .dark {
+    flex-direction: column-reverse;
+  }
 }
 .home .main .dark h2 {
   color: black;
