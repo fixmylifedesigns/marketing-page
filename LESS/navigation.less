@@ -9,18 +9,56 @@
     padding: 20px 0;
     margin-left: 20%;
     margin-right: 20%;
-
     width: auto;
+
+    @media @mobile {
+      margin: 0 10px;
+      padding: 10px 0 10px 0;
+    }
+    @media @phone {
+      flex-direction: column;
+      margin: 0;
+      padding: 0 0 10px 0;
+    }
+
     h2 {
       padding-top: 10px;
       padding-bottom: 10px;
+      text-shadow: 2px 2px 4px black;
     }
-
-    nav {
-      a {
-        font-size: 1.6rem;
-        padding-right: 20px;
-        color: black;
+    .menu {
+      display: flex;
+      flex-direction:row;
+      justify-content: flex-end;
+      align-items: center;
+      @media @phone {
+        flex-direction:column-reverse;
+      }
+      nav {
+        // display:none;
+        a {
+          font-size: 1.9rem;
+          padding-right: 10px;
+          color: white;
+          text-shadow: 2px 2px 4px black;
+          @media @mobile {
+            font-size: 1.6rem;
+          }
+          @media @phone {
+            flex-direction: row;
+            padding: 0px;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .menuIcon {
+        width: 50px;
+        height: 50px;
+        // padding-left: 10px;
+        cursor: pointer;
+        @media @mobile {
+          padding-buttom: 5px;
+        }
       }
     }
   }

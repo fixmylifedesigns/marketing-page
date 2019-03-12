@@ -1,12 +1,5 @@
 // team homepage
 .team {
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/main.png");
-  background-size: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: top center;
   .top {
     .intro {
       background: rgb(170, 170, 170);
@@ -40,6 +33,10 @@
       padding: 30px 10px;
       .width(800px);
       margin-top: 20px;
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+      }
     }
     .dark {
       display: flex;

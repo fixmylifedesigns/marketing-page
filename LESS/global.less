@@ -1,35 +1,48 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    font-weight: bold;
-    font-family: "Courier New", Courier, monospace;
-    color: white;
-  }
-
-  .container {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;  
-    background: rgb(55, 188, 221);
-  }
-
-h1 {
-    font-size: 6rem;
+  box-sizing: border-box;
 }
 
-  h2 {
-    font-size: 3.2rem;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: white;
+  height: 100%;
+  background-image: url("../img/main.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position-y: -10%;
+  @media @mobile {
+    background-position-y: 100%;
   }
-  
-  h3 {
-    font-size: 2.8rem;
+  @media @phone {
+    background-position-y: 100%;
+    background-size: 200%;
   }
-  
-  p {
-    font-size: 1.8rem;
-    line-height: 1.4;
-  }
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
