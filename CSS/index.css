@@ -202,17 +202,18 @@ html {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
-  background-position-y: 200%;
+  background-position-y: 80%;
 }
 @media (max-width: 1070px) {
   .container {
-    background-position-y: 100%;
+    background-position-y: 50%;
+    background-size: 100%;
   }
 }
 @media (max-width: 600px) {
   .container {
-    background-position-y: 100%;
-    background-size: 200%;
+    background-position-y: 50%;
+    background-size: 100%;
   }
 }
 h1 {
