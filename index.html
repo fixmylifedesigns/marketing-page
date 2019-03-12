@@ -7,76 +7,94 @@
   </head>
 
   <body class="container home">
-    <!-- <body class="container home" 
-  style = 'background: url(img/head.jpg); background-size: 100%; background-repeat: no-repeat; background-position: top center;'
-  > -->
+    <script defer="defer" src="./JS/menu.js"></script>
 
-    <div class="navigation">
-      <div class="nav">
-        <h2>Educell</h2>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="team.html">Our Team</a>
-          <a href="#">Contact</a>
-          <a href="#">login</a>
-          <a href="#">Sign up</a>
-        </nav>
-      </div>
+    <div class="header">
+      <h2 onclick="window.location.href='index.html';">Educell</h2>
+
+      <nav class="menu">
+        <a class="a" href="index.html">Home</a>
+        <a class="a" href="team.html">About Us</a>
+        <!-- <a href="#">Contact</a> -->
+        <a class="a" href="https://educell.netlify.com/">login</a>
+        <a class="a" href="https://educell.netlify.com/">Sign up</a>
+      </nav>
+
+      <img src="img/menu.png" class="menuIcon" />
     </div>
+
     <div class="top">
       <div class="intro">
         <h1>EDUCELL</h1>
         <p>
-          SOLVING EDUCATIONAL CHALLENGES
-          <br />IN REMOTE AND LOW-RESOURCE <br />ENVIRONMENTS
+          Built for educators.
+          <br />Benefits for students. <br />
         </p>
-        <button class="loginbtn">Login</button>
+        <button
+          onclick="window.location.href='https://educell.netlify.com/';"
+          class="loginbtn"
+        >
+          Login
+        </button>
         <a href="#one">Learn More</a>
       </div>
       <img src="img/arrow.png" class="arrow" alt="arrows pointing down" />
     </div>
     <div class="main">
-      <section id="one" class="light">
-        <p>
-          Paramore wow guitar Bestfriend z-bar Gabriel Colorguard car water
-          car. U Olsen Twins Jeff yee haw fire.
-        </p>
-
-        <img src="img/bag.png" class="bag" atl="school bag" />
-
-        <p>Kiwi uni soccer Chill ADD Japan Hag Iran heartbreak zen.</p>
+      <section id="one" class="one light">
+        <div>
+          <!-- <h2>WHAT WE DO</h2>
+          <p>
+            We help schools and teachers in Africa to use low-cost technology
+            and free instructional materials to improve outcomes in their
+            classrooms. Our partner-teachers leverage digital assessments to
+            instantly understand student needs, and multimedia instructional
+            materials to personalize instruction for every student. We install
+            the technology, train the teachers, and provide the instructional
+            material. Check out our Projects page to see some examples of our
+            work.
+          </p> -->
+          <h2>An easier way to manage student information</h2>
+        </div>
+        <img src="img/desk.png" class="desk" alt="desk" />
       </section>
-      <section class="dark">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img src="img/book.png" class="book" alt="open book" />
-        <p>
-          Kiwi uni soccer Chill ADD Japan Hag Iran heartbreak zen.
-        </p>
+      <section class="two dark">
+        <div>
+          <h2>Power at your finger tips</h2>
+          <p>
+            We believe that managing student information should be convenient
+            for educators, rather than an added challenge.
+          </p>
+        </div>
+        <img src="img/edit.png" class="tablet" alt="tablet" />
       </section>
-      <section class="light">
-        <p>
-          Paramore wow guitar Bestfriend z-bar Gabriel Colorguard car water
-          car. U Olsen Twins Jeff yee haw fire.
-        </p>
-
+      <section class="three light">
+        <div>
+          <h2>APP FEATURES</h2>
+          <ul>
+            <li>- Manage student information</li>
+            <li>- Student data Protection</li>
+            <li>- Add, edit, and delete student data at any given time</li>
+          </ul>
+        </div>
         <img src="img/kids.png" class="kids" atl="kids" />
-
-        <p>Kiwi uni soccer Chill ADD Japan Hag Iran heartbreak zen.</p>
       </section>
-      <section class="dark">
-        <p>
-          Wapanese Eminem Lara Reagan Verizon walk Brooklyn WORK teh YONKS.
-          <br />
-          Paramore wow guitar Bestfriend z-bar Gabriel Colorguard car water
-          car. U Olsen Twins Jeff yee haw fire.
-        </p>
-
+      <section class="four dark">
+        <div>
+          <p>
+            Wapanese Eminem Lara Reagan Verizon walk Brooklyn WORK teh YONKS.
+            <br />
+            Paramore wow guitar Bestfriend z-bar Gabriel Colorguard car water
+            car. U Olsen Twins Jeff yee haw fire.
+          </p>
+          <button
+            onclick="window.location.href='https://educell.netlify.com/';"
+            class="signUpbtn"
+          >
+            Sign Up
+          </button>
+        </div>
         <img src="img/sign up.png" class="signup" atl="sign up" />
-
-        <button class="signUpbtn">Sign Up</button>
       </section>
     </div>
     <footer>
@@ -84,3 +102,35 @@
     </footer>
   </body>
 </html>
+
+<!-- <div>
+    <h2>Project G.M.A.D.</h2>
+    <p>
+      Ghana Make A Difference (GMAD) is an NGO that provides housing and
+      basic necessities for children who have been rescued from human
+      trafficking, abuse, and neglect. Dissatisfied with the community
+      school, GMAD constructed a new school to serve their children and
+      others in the community. The GMAD Accademy of Learning employed
+      three full-time teachers, a special-needs teacher, and a vocational
+      trainer. They served approximately 60 students. Teachers and
+      students initially had limited competency with technology like
+      computers and tablets. One of the unique challenges at GMAD is that
+      students typically spend one year in the program, and enter and exit
+      the program at unpredictable times.
+    </p>
+    <button
+      onclick="window.location.href='https://www.ghanamakeadifference.org/';"
+      class="learnbtn"
+    >
+      Learn More
+    </button>
+  </div>
+
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/ptjaSNs0VP8"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe> -->

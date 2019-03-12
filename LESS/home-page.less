@@ -1,12 +1,4 @@
 .home {
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/main.png");
-  background-size: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: top center;
-
   .top {
     //img
     .arrow {
@@ -14,8 +6,12 @@
       width: 5%;
       display: flex;
       margin: 0 auto;
-      //   padding-top: -30px;
-        padding-bottom: 20px;
+      padding-bottom: 20px;
+      @media @phone {
+        height: 20%;
+        width: 20%;
+        padding-bottom: 0px;
+      }
     }
 
     .intro {
@@ -41,23 +37,26 @@
         color: white;
         padding-top: 60px;
         text-shadow: 2px 2px 4px black;
+        @media @phone {
+          padding-top: 20px;
+        }
       }
     }
   }
   .main {
     // main body images
 
-    .bag {
-      width: 40%;
-      height: 40%;
-      margin: auto;
+    .tablet {
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
     }
     .kids {
       width: 50%;
       height: 50%;
       margin: 0 auto;
     }
-    .book {
+    .desk {
       width: 50%;
       height: 50%;
       margin: 0 auto;
@@ -67,29 +66,57 @@
       height: 50%;
       margin: 0 auto;
     }
+    ul {
+      padding-top: 10px;
+      .width(600px);
+      color: black;
 
+    }
     .light {
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-      background: rgb(207, 207, 207);
-      border-radius: 10px;
-      padding: 30px 10px;
-      margin-top: 20px;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      background: rgba(155, 183, 212, 1);
+      // border-radius: 10px;
+      padding: 30px 40px;
+      // margin-top: 20px;
+      @media @mobile {
+        flex-direction: column-reverse;
+      }
+      h2 {
+        color: black;
+        text-align: center;
+        font-size: 6rem;
+        @media @mobile {
+          font-size:3.2rem;
+        }
+      }
       p {
+        padding-top: 10px;
         .width(600px);
+        color: black;
         text-align: center;
       }
     }
     .dark {
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-      background: rgb(170, 170, 170);
-      border-radius: 10px;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      background: rgba(17, 52, 90, 1);
+      // border-radius: 10px;
       padding: 30px 10px;
-      margin-top: 20px;
+      // margin-top: 20px;
+      h2 {
+        color: black;
+        text-align: center;
+        font-size: 6rem;
+        @media @mobile {
+          font-size:3.2rem;
+        }
+      }
       p {
+        padding-top: 10px;
         .width(600px);
         text-align: center;
       }
