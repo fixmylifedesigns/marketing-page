@@ -2,14 +2,18 @@
 .team {
   .top {
     .intro {
-      background: rgba(17, 52, 90, 1);
+      background: rgba(155, 183, 212, 1);
       border-radius: 10px;
       padding: 30px 10px;
       .width(800px);
       margin-top: 20px;
 
       h1 {
+        color: black;
         padding-bottom: 20px;
+      }
+      p {
+        color: black;
       }
     }
   }
@@ -28,21 +32,20 @@
         padding: 0;
       }
     }
-    .github{
+    .github {
       margin: 0 auto;
       width: 30%;
-  
     }
     .info {
       padding: 20px;
-
-
     }
-    // h2{
-    //   font-size: 2.6rem;
-    // }
     p {
       padding: 40px 30px;
+    }
+    .header {
+      h1 {
+        margin: 0 auto;
+      }
     }
     .light {
       display: flex;
@@ -52,10 +55,12 @@
       padding: 30px 10px;
       .width(500px);
       margin-top: 20px;
+      .info {
+        color: black;
+      }
       @media @phone {
         display: flex;
         flex-direction: column;
-        
       }
     }
     .dark {

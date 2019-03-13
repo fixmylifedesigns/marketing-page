@@ -514,7 +514,7 @@ footer {
   text-align: center;
 }
 .team .top .intro {
-  background: #11345a;
+  background: #9bb7d4;
   border-radius: 10px;
   padding: 30px 10px;
   max-width: 800px;
@@ -523,7 +523,11 @@ footer {
   margin-top: 20px;
 }
 .team .top .intro h1 {
+  color: black;
   padding-bottom: 20px;
+}
+.team .top .intro p {
+  color: black;
 }
 .team .main .profileImg {
   padding: 10px;
@@ -551,6 +555,9 @@ footer {
 .team .main p {
   padding: 40px 30px;
 }
+.team .main .header h1 {
+  margin: 0 auto;
+}
 .team .main .light {
   display: flex;
   justify-content: space-between;
@@ -561,6 +568,9 @@ footer {
   width: 100%;
   margin: auto;
   margin-top: 20px;
+}
+.team .main .light .info {
+  color: black;
 }
 @media (max-width: 600px) {
   .team .main .light {
