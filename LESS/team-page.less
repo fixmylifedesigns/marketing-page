@@ -1,57 +1,77 @@
-// team homepage
 .team {
+  @media @phone {
+    background-image: none;
+  }
   .top {
     .intro {
-      background: rgb(170, 170, 170);
+      background: rgba(155, 183, 212, 1);
       border-radius: 10px;
       padding: 30px 10px;
       .width(800px);
       margin-top: 20px;
 
       h1 {
+        color: black;
         padding-bottom: 20px;
+      }
+      p {
+        color: black;
       }
     }
   }
   .main {
     .profileImg {
-      width: 25%;
-      height: 25%;
+      padding: 10px;
+      width: 50%;
+      height: 50%;
       display: flex;
       flex-wrap: wrap;
       border-radius: 100%;
       @media @phone {
-        width: 40%;
-        height: 40%;
+        width: 60%;
+        height: 60%;
         margin: 0 auto;
+        padding: 0;
       }
+    }
+    .github {
+      margin: 0 auto;
+      width: 30%;
     }
     .info {
       padding: 20px;
-
     }
     p {
-      padding: 0 30px;
+      padding: 40px 30px;
+    }
+    .header {
+      h1 {
+        margin: 0 auto;
+      }
     }
     .light {
       display: flex;
-      background: rgb(207, 207, 207);
+      justify-content: space-between;
+      background: rgba(155, 183, 212, 1);
       border-radius: 10px;
       padding: 30px 10px;
-      .width(800px);
+      .width(500px);
       margin-top: 20px;
+      .info {
+        color: black;
+      }
       @media @phone {
         display: flex;
         flex-direction: column;
-        
       }
     }
     .dark {
       display: flex;
-      background: rgb(170, 170, 170);
+      justify-content: space-between;
+      background: rgba(17, 52, 90, 1);
       border-radius: 10px;
       padding: 30px 10px;
-      .width(800px);
+      .width(500px);
       margin-top: 20px;
       @media @phone {
         display: flex;

@@ -13,7 +13,7 @@
   color: white;
   padding: 9px 0;
   border: 1px;
-  font-size: 1.9rem;
+  font-size: 1rem;
   margin: 30px auto;
   width: 180px;
   height: 60px;
@@ -36,22 +36,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.8rem;
+  width: 150px;
   margin: 30px auto;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   font-weight: 400;
   border-radius: 37px;
-  padding: 25px;
+  padding: 15px;
   line-height: 37px;
 }
 .signUpbtn {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.8rem;
+  width: 150px;
   margin: 30px auto;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   font-weight: 400;
   border-radius: 37px;
-  padding: 25px;
+  padding: 15px;
   line-height: 37px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -228,15 +232,15 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400c;
   line-height: 1.4;
 }
 li {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400c;
   line-height: 1.4;
-  padding-bottom: 20px;
+  padding-top: 30px;
 }
 .header {
   width: 80px;
@@ -262,20 +266,24 @@ li {
     padding: 0 0 10px 0;
   }
 }
-.header h2 {
-  font-size: 3rem;
-  color: black;
-  justify-content: flex-start;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  text-shadow: 2px 2px 4px grey;
+.header .logo {
   cursor: pointer;
 }
 @media (max-width: 600px) {
-  .header h2 {
+  .header .logo {
     display: none;
   }
+}
+.header .logo h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0;
+  text-shadow: 2px 2px 4px black;
+}
+.header .logo p {
+  text-align: center;
+  padding: 0;
+  text-shadow: 2px 2px 4px black;
 }
 .header .menu {
   display: none;
@@ -283,31 +291,31 @@ li {
   padding-right: 10px;
   color: black;
 }
-@media (max-width: 1070px) {
-  .header {
-    font-size: 1.6rem;
-  }
-}
 @media (max-width: 600px) {
-  .header {
-    flex-direction: column-reverse;
-    padding: 0px;
-    font-size: 1.6rem;
+  .header .menu {
+    padding: 30px 0 0 0;
+    display: block;
   }
 }
 .header a {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-right: 10px;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
-.menuIcon {
-  width: 50px;
-  height: 50px;
+.header .menuIcon {
+  width: 60px;
   cursor: pointer;
 }
 @media (max-width: 1070px) {
-  .menuIcon {
+  .header .menuIcon {
+    width: 70px;
     padding-bottom: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .header .menuIcon {
+    display: none;
   }
 }
 .menu {
@@ -330,13 +338,13 @@ footer {
 }
 @media (max-width: 600px) {
   .home .top .arrow {
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
     padding-bottom: 0px;
   }
 }
 .home .top .intro {
-  height: 440px;
+  height: 410px;
   border-radius: 10px;
   padding: 30px 10px;
   margin-top: 20px;
@@ -344,14 +352,39 @@ footer {
   width: 100%;
   margin: auto;
 }
+@media (max-width: 600px) {
+  .home .top .intro {
+    height: 445px;
+  }
+}
 .home .top .intro h1 {
+  display: none;
   padding: 0;
   text-align: center;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 1px 1px 6px black;
+}
+@media (max-width: 600px) {
+  .home .top .intro h1 {
+    display: block;
+  }
 }
 .home .top .intro p {
+  display: none;
   text-align: center;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 1px 1px 6px black;
+}
+@media (max-width: 600px) {
+  .home .top .intro p {
+    display: block;
+  }
+}
+.home .top .intro .loginbtn {
+  display: none;
+}
+@media (max-width: 600px) {
+  .home .top .intro .loginbtn {
+    display: block;
+  }
 }
 .home .top .intro a {
   font-weight: bold;
@@ -360,12 +393,13 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 60px;
+  padding-top: 300px;
   text-shadow: 2px 2px 4px black;
 }
 @media (max-width: 600px) {
   .home .top .intro a {
-    padding-top: 20px;
+    font-size: 3rem;
+    padding-top: 140px;
   }
 }
 .home .main .tablet {
@@ -374,6 +408,12 @@ footer {
   margin: 0 auto;
 }
 @media (max-width: 1070px) {
+  .home .main .tablet {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
   .home .main .tablet {
     width: 100%;
     height: 100%;
@@ -386,6 +426,12 @@ footer {
 }
 @media (max-width: 1070px) {
   .home .main .kids {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .home .main .kids {
     width: 100%;
     height: 100%;
   }
@@ -396,6 +442,12 @@ footer {
   margin: 0 auto;
 }
 @media (max-width: 1070px) {
+  .home .main .desk {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
   .home .main .desk {
     width: 100%;
     height: 100%;
@@ -408,16 +460,15 @@ footer {
 }
 @media (max-width: 1070px) {
   .home .main .signup {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .home .main .signup {
     width: 100%;
     height: 100%;
   }
-}
-.home .main ul {
-  padding-top: 10px;
-  max-width: 600px;
-  width: 100%;
-  margin: auto;
-  color: black;
 }
 .home .main .light {
   display: flex;
@@ -426,6 +477,13 @@ footer {
   flex-direction: row;
   background: #9bb7d4;
   padding: 30px 40px;
+}
+.home .main .light ul {
+  padding-top: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  color: black;
 }
 @media (max-width: 1070px) {
   .home .main .light {
@@ -443,7 +501,7 @@ footer {
   }
 }
 .home .main .light p {
-  padding-top: 10px;
+  padding-top: 20px;
   max-width: 600px;
   width: 100%;
   margin: auto;
@@ -453,9 +511,10 @@ footer {
 .home .main .dark {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row-reverse;
   background: #11345a;
-  padding: 30px 10px;
+  padding: 30px 40px;
 }
 @media (max-width: 1070px) {
   .home .main .dark {
@@ -463,7 +522,6 @@ footer {
   }
 }
 .home .main .dark h2 {
-  color: black;
   text-align: center;
   font-size: 6rem;
 }
@@ -473,14 +531,19 @@ footer {
   }
 }
 .home .main .dark p {
-  padding-top: 10px;
+  padding-top: 20px;
   max-width: 600px;
   width: 100%;
   margin: auto;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .team {
+    background-image: none;
+  }
+}
 .team .top .intro {
-  background: #aaaaaa;
+  background: #9bb7d4;
   border-radius: 10px;
   padding: 30px 10px;
   max-width: 800px;
@@ -489,37 +552,54 @@ footer {
   margin-top: 20px;
 }
 .team .top .intro h1 {
+  color: black;
   padding-bottom: 20px;
 }
+.team .top .intro p {
+  color: black;
+}
 .team .main .profileImg {
-  width: 25%;
-  height: 25%;
+  padding: 10px;
+  width: 50%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
   border-radius: 100%;
 }
 @media (max-width: 600px) {
   .team .main .profileImg {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     margin: 0 auto;
+    padding: 0;
   }
+}
+.team .main .github {
+  margin: 0 auto;
+  width: 30%;
 }
 .team .main .info {
   padding: 20px;
 }
 .team .main p {
-  padding: 0 30px;
+  padding: 40px 30px;
+}
+.team .main .header h1 {
+  margin: 0 auto;
 }
 .team .main .light {
   display: flex;
-  background: #cfcfcf;
+  justify-content: space-between;
+  background: #9bb7d4;
   border-radius: 10px;
   padding: 30px 10px;
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   margin-top: 20px;
+}
+.team .main .light .info {
+  color: black;
 }
 @media (max-width: 600px) {
   .team .main .light {
@@ -529,10 +609,11 @@ footer {
 }
 .team .main .dark {
   display: flex;
-  background: #aaaaaa;
+  justify-content: space-between;
+  background: #11345a;
   border-radius: 10px;
   padding: 30px 10px;
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   margin-top: 20px;
