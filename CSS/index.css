@@ -409,6 +409,12 @@ footer {
 }
 @media (max-width: 1070px) {
   .home .main .tablet {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .home .main .tablet {
     width: 100%;
     height: 100%;
   }
@@ -419,6 +425,12 @@ footer {
   margin: 0 auto;
 }
 @media (max-width: 1070px) {
+  .home .main .kids {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
   .home .main .kids {
     width: 100%;
     height: 100%;
@@ -431,6 +443,12 @@ footer {
 }
 @media (max-width: 1070px) {
   .home .main .desk {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .home .main .desk {
     width: 100%;
     height: 100%;
   }
@@ -441,6 +459,12 @@ footer {
   margin: 0 auto;
 }
 @media (max-width: 1070px) {
+  .home .main .signup {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
   .home .main .signup {
     width: 100%;
     height: 100%;
@@ -512,6 +536,11 @@ footer {
   width: 100%;
   margin: auto;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .team {
+    background-image: none;
+  }
 }
 .team .top .intro {
   background: #9bb7d4;
