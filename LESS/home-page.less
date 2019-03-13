@@ -8,24 +8,27 @@
       margin: 0 auto;
       padding-bottom: 20px;
       @media @phone {
-        height: 20%;
-        width: 20%;
+        height: 15%;
+        width: 15%;
         padding-bottom: 0px;
       }
     }
 
     .intro {
-      height: 440px;
+      height: 410px;
       border-radius: 10px;
       padding: 30px 10px;
       margin-top: 20px;
       .width(600px);
+      @media @phone {
+        height: 445px;
+      }
 
       h1 {
         display: none;
         padding: 0;
         text-align: center;
-        text-shadow: 2px 2px 4px black;
+        text-shadow: 1px 1px 6px black;
         @media @phone {
           display: block;
         }
@@ -33,7 +36,7 @@
       p {
         display: none;
         text-align: center;
-        text-shadow: 2px 2px 4px black;
+        text-shadow: 1px 1px 6px black;
         @media @phone {
           display: block;
         }
@@ -49,10 +52,11 @@
         font-size: 4rem;
         .center();
         color: white;
-        padding-top: 200px;
+        padding-top: 300px;
         text-shadow: 2px 2px 4px black;
         @media @phone {
-          padding-top: 20px;
+          font-size: 3rem;
+          padding-top: 140px;
         }
       }
     }
@@ -64,7 +68,7 @@
       width: 50%;
       height: 50%;
       margin: 0 auto;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
         height: 100%;
       }
@@ -73,7 +77,7 @@
       width: 50%;
       height: 50%;
       margin: 0 auto;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
         height: 100%;
       }
@@ -82,7 +86,7 @@
       width: 50%;
       height: 50%;
       margin: 0 auto;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
         height: 100%;
       }
@@ -91,17 +95,18 @@
       width: 50%;
       height: 50%;
       margin: 0 auto;
-      @media @mobile {
+      @media @tablet {
         width: 100%;
         height: 100%;
       }
     }
-    ul {
-      padding-top: 20px;
-      .width(600px);
-      color: black;
-    }
+    
     .light {
+      ul {
+        padding-top: 20px;
+        .width(600px);
+        color: black;
+      }
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -110,14 +115,14 @@
       // border-radius: 10px;
       padding: 30px 40px;
       // margin-top: 20px;
-      @media @mobile {
+      @media @tablet {
         flex-direction: column-reverse;
       }
       h2 {
         color: black;
         text-align: center;
         font-size: 6rem;
-        @media @mobile {
+        @media @tablet {
           font-size: 3.2rem;
         }
       }
@@ -137,13 +142,13 @@
       // border-radius: 10px;
       padding: 30px 40px;
       // margin-top: 20px;
-      @media @mobile {
+      @media @tablet {
         flex-direction: column-reverse;
       }
       h2 {
         text-align: center;
         font-size: 6rem;
-        @media @mobile {
+        @media @tablet {
           font-size: 3.2rem;
         }
       }
