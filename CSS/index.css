@@ -517,6 +517,10 @@ footer {
     padding: 0;
   }
 }
+.team .main .github {
+  margin: 0 auto;
+  width: 30%;
+}
 .team .main .info {
   padding: 20px;
 }
