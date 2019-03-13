@@ -22,20 +22,34 @@
       .width(600px);
 
       h1 {
+        display:none;
         padding: 0;
         text-align: center;
         text-shadow: 2px 2px 4px black;
+        @media @phone {
+        display:block;
+        }
       }
       p {
+        display:none;
         text-align: center;
         text-shadow: 2px 2px 4px black;
+        @media @phone {
+        display:block;
+        }
+      }
+      .loginbtn{
+        display:none;
+        @media @phone {
+          display:block;
+        }
       }
       a {
         font-weight: bold;
         font-size: 4rem;
         .center();
         color: white;
-        padding-top: 60px;
+        padding-top: 200px;
         text-shadow: 2px 2px 4px black;
         @media @phone {
           padding-top: 20px;

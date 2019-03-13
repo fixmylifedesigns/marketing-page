@@ -13,7 +13,7 @@
   color: white;
   padding: 9px 0;
   border: 1px;
-  font-size: 1.9rem;
+  font-size: 1rem;
   margin: 30px auto;
   width: 180px;
   height: 60px;
@@ -262,20 +262,21 @@ li {
     padding: 0 0 10px 0;
   }
 }
-.header h2 {
-  font-size: 3rem;
-  color: black;
-  justify-content: flex-start;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  text-shadow: 2px 2px 4px grey;
-  cursor: pointer;
-}
 @media (max-width: 600px) {
-  .header h2 {
+  .header .logo {
     display: none;
   }
+}
+.header .logo h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0;
+  text-shadow: 2px 2px 4px black;
+}
+.header .logo p {
+  text-align: center;
+  padding: 0;
+  text-shadow: 2px 2px 4px black;
 }
 .header .menu {
   display: none;
@@ -307,6 +308,8 @@ li {
 }
 @media (max-width: 1070px) {
   .menuIcon {
+    width: 45px;
+    height: 50px;
     padding-bottom: 5px;
   }
 }
@@ -345,13 +348,33 @@ footer {
   margin: auto;
 }
 .home .top .intro h1 {
+  display: none;
   padding: 0;
   text-align: center;
   text-shadow: 2px 2px 4px black;
 }
+@media (max-width: 600px) {
+  .home .top .intro h1 {
+    display: block;
+  }
+}
 .home .top .intro p {
+  display: none;
   text-align: center;
   text-shadow: 2px 2px 4px black;
+}
+@media (max-width: 600px) {
+  .home .top .intro p {
+    display: block;
+  }
+}
+.home .top .intro .loginbtn {
+  display: none;
+}
+@media (max-width: 600px) {
+  .home .top .intro .loginbtn {
+    display: block;
+  }
 }
 .home .top .intro a {
   font-weight: bold;
@@ -360,7 +383,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 60px;
+  padding-top: 200px;
   text-shadow: 2px 2px 4px black;
 }
 @media (max-width: 600px) {

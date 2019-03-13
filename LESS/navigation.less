@@ -18,20 +18,24 @@
     margin: 10px 0;
     padding: 0 0 10px 0;
   }
-
-  h2 {
-    font-size: 3.0rem;
-    color: black;
-    justify-content: flex-start;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    text-shadow: 2px 2px 4px grey;
-    cursor: pointer;
-    @media @phone {
-      display: none;
-    }
+.logo{
+  @media @phone {
+    display: none;
   }
+   h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0;
+    text-shadow: 2px 2px 4px black;
+
+  }
+  p{
+    text-align: center;
+    padding: 0;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+ 
 
   .menu {
     display: none;
@@ -60,6 +64,8 @@
   // padding-left: 10px;
   cursor: pointer;
   @media @mobile {
+    width: 45px;
+    height: 50px;
     padding-bottom: 5px;
   }
 }
