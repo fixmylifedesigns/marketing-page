@@ -2,7 +2,7 @@
 .team {
   .top {
     .intro {
-      background: rgb(170, 170, 170);
+      background: rgba(17, 52, 90, 1);
       border-radius: 10px;
       padding: 30px 10px;
       .width(800px);
@@ -15,30 +15,37 @@
   }
   .main {
     .profileImg {
-      width: 25%;
-      height: 25%;
+      padding: 10px;
+      width: 50%;
+      height: 50%;
       display: flex;
       flex-wrap: wrap;
       border-radius: 100%;
       @media @phone {
-        width: 40%;
-        height: 40%;
+        width: 60%;
+        height: 60%;
         margin: 0 auto;
+        padding: 0;
       }
     }
     .info {
       padding: 20px;
 
+
     }
+    // h2{
+    //   font-size: 2.6rem;
+    // }
     p {
-      padding: 0 30px;
+      padding: 40px 30px;
     }
     .light {
       display: flex;
-      background: rgb(207, 207, 207);
+      justify-content: space-between;
+      background: rgba(155, 183, 212, 1);
       border-radius: 10px;
       padding: 30px 10px;
-      .width(800px);
+      .width(500px);
       margin-top: 20px;
       @media @phone {
         display: flex;
@@ -48,10 +55,11 @@
     }
     .dark {
       display: flex;
-      background: rgb(170, 170, 170);
+      justify-content: space-between;
+      background: rgba(17, 52, 90, 1);
       border-radius: 10px;
       padding: 30px 10px;
-      .width(800px);
+      .width(500px);
       margin-top: 20px;
       @media @phone {
         display: flex;

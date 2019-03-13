@@ -228,7 +228,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400c;
   line-height: 1.4;
 }
@@ -284,32 +284,19 @@ li {
   padding-right: 10px;
   color: black;
 }
-@media (max-width: 1070px) {
-  .header {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column-reverse;
-    padding: 0px;
-    font-size: 1.6rem;
-  }
-}
 .header a {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-right: 10px;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
-.menuIcon {
-  width: 50px;
-  height: 50px;
+.header .menuIcon {
+  width: 60px;
   cursor: pointer;
 }
 @media (max-width: 1070px) {
-  .menuIcon {
-    width: 45px;
-    height: 50px;
+  .header .menuIcon {
+    width: 70px;
     padding-bottom: 5px;
   }
 }
@@ -436,7 +423,7 @@ footer {
   }
 }
 .home .main ul {
-  padding-top: 10px;
+  padding-top: 20px;
   max-width: 600px;
   width: 100%;
   margin: auto;
@@ -466,7 +453,7 @@ footer {
   }
 }
 .home .main .light p {
-  padding-top: 10px;
+  padding-top: 20px;
   max-width: 600px;
   width: 100%;
   margin: auto;
@@ -476,9 +463,10 @@ footer {
 .home .main .dark {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row-reverse;
   background: #11345a;
-  padding: 30px 10px;
+  padding: 30px 40px;
 }
 @media (max-width: 1070px) {
   .home .main .dark {
@@ -486,7 +474,6 @@ footer {
   }
 }
 .home .main .dark h2 {
-  color: black;
   text-align: center;
   font-size: 6rem;
 }
@@ -496,14 +483,14 @@ footer {
   }
 }
 .home .main .dark p {
-  padding-top: 10px;
+  padding-top: 20px;
   max-width: 600px;
   width: 100%;
   margin: auto;
   text-align: center;
 }
 .team .top .intro {
-  background: #aaaaaa;
+  background: #11345a;
   border-radius: 10px;
   padding: 30px 10px;
   max-width: 800px;
@@ -515,31 +502,34 @@ footer {
   padding-bottom: 20px;
 }
 .team .main .profileImg {
-  width: 25%;
-  height: 25%;
+  padding: 10px;
+  width: 50%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
   border-radius: 100%;
 }
 @media (max-width: 600px) {
   .team .main .profileImg {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     margin: 0 auto;
+    padding: 0;
   }
 }
 .team .main .info {
   padding: 20px;
 }
 .team .main p {
-  padding: 0 30px;
+  padding: 40px 30px;
 }
 .team .main .light {
   display: flex;
-  background: #cfcfcf;
+  justify-content: space-between;
+  background: #9bb7d4;
   border-radius: 10px;
   padding: 30px 10px;
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   margin-top: 20px;
@@ -552,10 +542,11 @@ footer {
 }
 .team .main .dark {
   display: flex;
-  background: #aaaaaa;
+  justify-content: space-between;
+  background: #11345a;
   border-radius: 10px;
   padding: 30px 10px;
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   margin-top: 20px;
